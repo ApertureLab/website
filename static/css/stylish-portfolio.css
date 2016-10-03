@@ -167,7 +167,7 @@ h1::after {
     z-index: -1;
     background: url(../img/aperture-lab.gif) no-repeat center center scroll;
     background-size: 50%;
-    filter: opacity(20%);
+    filter: opacity(30%);
 }
 
 /* About */

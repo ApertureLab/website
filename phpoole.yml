@@ -1,7 +1,7 @@
 site:
   title: Aperture Lab
   baseline: Solutions Web pragmatiques
-  baseurl: http://aperturelab.io/
+  baseurl: https://aperturelab.io/
   description: Aperture Lab, Solutions Web pragmatiques.
   language: fr
   author:

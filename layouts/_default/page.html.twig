@@ -21,9 +21,8 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>{{ site.title}}</h1>
-            <h3>{{ site.baseline }}</h3>
-            <br>
-            <a href="{{ site.about.url }}" class="btn btn-dark btn-lg">En savoir plus</a>
+            <h2>{{ site.baseline }}</h2>
+            <p><a href="{{ site.about.url }}" class="btn btn-dark btn-lg">En savoir plus</a></p>
         </div>
     </header>
     <!-- Footer -->
@@ -35,7 +34,7 @@
                     <p class="text-muted">
                         Copyright &copy; {{ "now"|date("Y") }} <a href="{{ site.author.website }}">{{ site.author.name }}</a></p>
                     <p class="text-muted">
-                        Powered by <a href="{{ phpoole.url }}">PHPoole</a>
+                        Powered by <a href="{{ phpoole.url }}">PHPoole</a> &amp; <a href="https://www.netlify.com/">Netlify</a>
                     </p>
                 </div>
             </div>

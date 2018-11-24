@@ -1,1 +1,1 @@
-Source code of https://aperturelab.io, generated with [PHPoole](https://phpoole.org).
+Source code of https://aperturelab.io, generated with [Cecil](https://cecil.app).

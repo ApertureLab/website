@@ -1,11 +1,11 @@
 site:
-  title: Aperture Lab
-  baseline: Solutions numériques pragmatiques
+  title: "Aperture Lab"
+  baseline: "Solutions numériques pragmatiques"
   baseurl: https://aperturelab.io/
-  description: Aperture Lab, Solutions numériques pragmatiques.
+  description: "Aperture Lab, Solutions numériques pragmatiques."
   language: fr
   author:
-    name: Arnaud Ligny
+    name: "Arnaud Ligny"
     website: https://arnaudligny.fr
   about:
     url: https://arnaudligny.fr

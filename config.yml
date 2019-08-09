@@ -1,15 +1,14 @@
-site:
-  title: "Aperture Lab"
-  baseline: "Solutions numériques pragmatiques"
-  baseurl: https://aperturelab.io/
-  description: "Aperture Lab, Solutions numériques pragmatiques."
-  language: fr
-  languages:
-    fr:
-      name: Français
-      locale: fr_FR
-  author:
-    name: "Arnaud Ligny"
-    website: https://arnaudligny.fr
-  about:
-    url: https://arnaudligny.fr
+title: "Aperture Lab"
+baseline: "Solutions numériques pragmatiques"
+baseurl: https://aperturelab.io/
+description: "Aperture Lab, Solutions numériques pragmatiques."
+language: fr
+languages:
+  fr:
+    name: Français
+    locale: fr_FR
+author:
+  name: "Arnaud Ligny"
+  website: https://arnaudligny.fr
+about:
+  url: https://arnaudligny.fr

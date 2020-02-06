@@ -4,7 +4,7 @@ baseurl: https://aperturelab.fr/
 description: "Aperture Lab, Solutions numériques pragmatiques."
 language: fr
 languages:
-  fr:
+  - code: fr
     name: Français
     locale: fr_FR
 author:

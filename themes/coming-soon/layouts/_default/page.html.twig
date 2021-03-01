@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {%~ include 'partials/metatags.html.twig' ~%}
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.css')|url }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="{{ asset('vendor/fontawesome-free/css/all.css')|url }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('scss/coming-soon.scss')|url }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{{ asset('mp4/bg.mp4')|url }}" type="video/mp4">
+    </video>
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h1 class="mb-3">{{ site.title }}</h1>
+              <h5 class="mb-5">{{ site.baseline }}</h5>
+              {{~ page.content ~}}
+              <form name="contacts" method="post" data-netlify="true">
+                <div class="input-group input-group-newsletter">
+                  <input type="email" name="email" required class="form-control" placeholder="Adresse e-mail..." aria-label="Adresse e-mail..." aria-describedby="basic-addon">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="submit">Prévenez-moi !</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-icons">
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="https://twitter.com/{{ site.social.twitter.site }}"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="https://github.com/{{ site.social.github.username }}"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+    <script src="{{ asset('vendor/jquery/jquery.js')|url }}"></script>
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.js')|url }}"></script>
+    <script src="{{ asset('js/coming-soon.js')|url }}"></script>
+  </body>
+</html>

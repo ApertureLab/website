@@ -1,7 +1,7 @@
 title: "Aperture Lab"
-baseline: "Solutions numériques pragmatiques"
+baseline: "Solutions numériques pragmatiques."
 baseurl: https://aperturelab.fr/
-description: "Aperture Lab, Solutions numériques pragmatiques."
+description: "Aperture Lab, des solutions numériques pragmatiques."
 language: fr
 languages:
   - code: fr
@@ -12,5 +12,14 @@ author:
   website: https://arnaudligny.fr
 about:
   url: https://arnaudligny.fr
+#assets:
+#  compile:
+#    import: [font-awesome/scss]
 theme: coming-soon
+social:
+  twitter:
+    site: ArnaudLigny
+    creator: ArnaudLigny
+  github:
+    username: ApertureLab
 editor: typora

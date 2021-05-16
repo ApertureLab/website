@@ -3,5 +3,3 @@
 _site
 vendor
 themes/*
-!themes/comingsoon/
-!themes/comingsoon/static/.keep

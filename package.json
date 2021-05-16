@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "postinstall": "cd themes/coming-soon/static && npm install"
+    "postinstall": "cd themes/comingsoon/static && npm install"
   }
 }

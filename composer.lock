@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc30979df43c4a3ab95fd9ea41ece133",
+    "content-hash": "a34e5111192494af4a3fe412112b3a85",
     "packages": [
         {
             "name": "cecil/theme-comingsoon",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-comingsoon.git",
-                "reference": "96e21801ee165556570114460f25c01319d3e345"
+                "reference": "e1a38456630a9770fe9eca07c160d721b27b5ba4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/96e21801ee165556570114460f25c01319d3e345",
-                "reference": "96e21801ee165556570114460f25c01319d3e345",
+                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/e1a38456630a9770fe9eca07c160d721b27b5ba4",
+                "reference": "e1a38456630a9770fe9eca07c160d721b27b5ba4",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-comingsoon/issues",
-                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.0.1"
+                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.1.0"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-16T13:52:50+00:00"
+            "time": "2021-05-16T17:11:40+00:00"
         },
         {
             "name": "cecil/theme-installer",

@@ -22,6 +22,8 @@ assets:
     variables:
       primary: '#69B7FF'
       secondary: '#69C748'
+      link-color: '#FFF'
+      link-hover-color: '#FFF'
 social:
   twitter:
     site: ArnaudLigny

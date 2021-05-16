@@ -32,12 +32,31 @@
     </div>
     <div class="social-icons">
       <ul class="list-unstyled text-center mb-0">
+        {%- if site.social.twitter.site is defined ~%}
         <li class="list-unstyled-item">
           <a href="https://twitter.com/{{ site.social.twitter.site }}"><i class="fab fa-twitter"></i></a>
         </li>
+        {%- endif ~%}
+        {%- if site.social.facebook.username is defined ~%}
+        <li class="list-unstyled-item">
+            <a href="https://facebook.com/{{ site.social.facebook.username }}"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        {%- endif ~%}
+        {%- if site.social.instagram.username is defined ~%}
+        <li class="list-unstyled-item">
+            <a href="https://instagram.com/{{ site.social.instagram.username }}"><i class="fab fa-instagram"></i></a>
+        </li>
+        {%- endif ~%}
+        {%- if site.social.github.username is defined ~%}
         <li class="list-unstyled-item">
           <a href="https://github.com/{{ site.social.github.username }}"><i class="fab fa-github"></i></a>
         </li>
+        {%- endif ~%}
+        {%- if site.social.linkedin.username is defined ~%}
+        <li class="list-unstyled-item">
+            <a href="https://linkedin.com/in/{{ site.social.linkedin.username }}"><i class="fab fa-linkedin"></i></a>
+        </li>
+        {%- endif ~%}
       </ul>
     </div>
   </body>

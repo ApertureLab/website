@@ -15,7 +15,6 @@ about:
 #assets:
 #  compile:
 #    import: [font-awesome/scss]
-
 theme: coming-soon
 assets:
   compile:
@@ -23,7 +22,6 @@ assets:
     variables:
       primary: '#69B7FF'
       secondary: '#69C748'
-
 social:
   twitter:
     site: ArnaudLigny

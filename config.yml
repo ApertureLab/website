@@ -12,6 +12,7 @@ author:
   website: https://arnaudligny.fr
 about:
   url: https://arnaudligny.fr
+image: img/aperture-lab.gif
 #assets:
 #  compile:
 #    import: [font-awesome/scss]

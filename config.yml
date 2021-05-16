@@ -16,7 +16,7 @@ image: img/aperture-lab.gif
 #assets:
 #  compile:
 #    import: [font-awesome/scss]
-theme: coming-soon
+theme: comingsoon
 assets:
   compile:
     import: [node_modules]

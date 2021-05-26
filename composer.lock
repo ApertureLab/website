@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-comingsoon",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-comingsoon.git",
-                "reference": "ea42525d111d534fb74046f8d4c34def3ba4e85c"
+                "reference": "8a634d978a1804e1a2881f22bb5ce46397620cb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/ea42525d111d534fb74046f8d4c34def3ba4e85c",
-                "reference": "ea42525d111d534fb74046f8d4c34def3ba4e85c",
+                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/8a634d978a1804e1a2881f22bb5ce46397620cb7",
+                "reference": "8a634d978a1804e1a2881f22bb5ce46397620cb7",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-comingsoon/issues",
-                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.1.2"
+                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.1.3"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-16T20:21:27+00:00"
+            "time": "2021-05-16T21:28:27+00:00"
         },
         {
             "name": "cecil/theme-installer",

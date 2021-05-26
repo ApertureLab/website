@@ -13,13 +13,10 @@ author:
 about:
   url: https://arnaudligny.fr
 image: img/aperture-lab.gif
-#assets:
-#  compile:
-#    import: [font-awesome/scss]
 theme: comingsoon
 comingsoon:
   subscribe:
-    placeholder: Adresse e-mail...
+    placeholder: Adresse e-mail…
     button: Prévenez-moi !
 assets:
   compile:

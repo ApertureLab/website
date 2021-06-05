@@ -37,3 +37,9 @@ social:
   #linkedin:
   #  username: arnaudligny
 editor: typora
+defaultpages:
+  sitemap:
+    published: false
+output:
+  pagetypeformats:
+    homepage: html

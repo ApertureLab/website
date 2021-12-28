@@ -1,5 +1,10 @@
 {
-    "require": {
-        "cecil/theme-comingsoon": "^1.1.0"
+  "require": {
+    "cecil/theme-comingsoon": "^1.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "cecil/theme-installer": true
     }
+  }
 }

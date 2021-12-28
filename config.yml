@@ -2,17 +2,15 @@ title: "Aperture Lab"
 baseline: "Solutions numériques pragmatiques."
 baseurl: https://aperturelab.fr/
 description: "Aperture Lab, des solutions numériques pragmatiques."
+author:
+  name: "Arnaud Ligny"
+  website: https://arnaudligny.fr
+image: aperture-lab.png
 language: fr
 languages:
   - code: fr
     name: Français
     locale: fr_FR
-author:
-  name: "Arnaud Ligny"
-  website: https://arnaudligny.fr
-about:
-  url: https://arnaudligny.fr
-image: aperture-lab.png
 theme: comingsoon
 comingsoon:
   subscribe:
@@ -23,6 +21,7 @@ assets:
     variables:
       primary: '#69B7FF'
       secondary: '#69C748'
+    #sourcemap: true
 social:
   twitter:
     site: ApertureLabFr

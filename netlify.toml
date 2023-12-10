@@ -3,7 +3,7 @@
   command = "bash ./scripts/netlify-build.sh"
 
 [build.environment]
-  #PHP_VERSION = "7.2"
+  PHP_VERSION = "8.1"
 
 [context.production.environment]
   CECIL_ENV = "production"

@@ -7,6 +7,7 @@ fi
 php cecil.phar --version
 
 echo "Installing Bootsrap"
+#npm install --prefix ./themes/comingsoon/static bootstrap@4.6.0
 cd themes/comingsoon/static
 npm install
 cd ../../..

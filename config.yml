@@ -35,9 +35,10 @@ social:
   #linkedin:
   #  username: arnaudligny
 editor: typora
-defaultpages:
-  sitemap:
-    published: false
+pages:
+  default:
+    sitemap:
+      published: false
 output:
   pagetypeformats:
     homepage: html

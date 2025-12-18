@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ef0b25816ea8cb72aab858207442fbd",
+    "content-hash": "17a17c6c85a07a1aef4f0039b0dc3eda",
     "packages": [
         {
             "name": "cecil/theme-comingsoon",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-comingsoon.git",
-                "reference": "7275ff04a4487308ed4e32ae28ed41fa5c8644a0"
+                "reference": "cc1acd9748e8f23653b1cba983150e5c5ba87d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/7275ff04a4487308ed4e32ae28ed41fa5c8644a0",
-                "reference": "7275ff04a4487308ed4e32ae28ed41fa5c8644a0",
+                "url": "https://api.github.com/repos/Cecilapp/theme-comingsoon/zipball/cc1acd9748e8f23653b1cba983150e5c5ba87d61",
+                "reference": "cc1acd9748e8f23653b1cba983150e5c5ba87d61",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-comingsoon/issues",
-                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.7.0"
+                "source": "https://github.com/Cecilapp/theme-comingsoon/tree/1.7.1"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-01-27T15:48:08+00:00"
+            "time": "2025-12-18T00:15:48+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -131,5 +131,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

@@ -1,6 +1,6 @@
 {
   "require": {
-    "cecil/theme-comingsoon": "^1.6"
+    "cecil/theme-comingsoon": "^1.7"
   },
   "config": {
     "allow-plugins": {

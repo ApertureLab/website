@@ -1,0 +1,47 @@
+title: "Aperture Lab"
+baseurl: https://aperturelab.fr/
+description: "Aperture Lab, des solutions numériques pragmatiques."
+baseline: "Solutions numériques pragmatiques."
+author:
+  name: "Arnaud Ligny"
+  website: https://arnaudligny.fr
+image: aperture-lab.png
+social:
+  twitter:
+    site: ApertureLabFr
+    creator: ArnaudLigny
+  #facebook:
+  #  username: Narno
+  #instagram:
+  #  username: narn0
+  github:
+    username: ApertureLab
+  #linkedin:
+  #  username: arnaudligny
+language: fr
+languages:
+  - code: fr
+    name: Français
+    locale: fr_FR
+
+theme: comingsoon
+comingsoon:
+  subscribe:
+    placeholder: Adresse e-mail…
+    button: Prévenez-moi !
+
+pages:
+  default:
+    sitemap:
+      published: false
+assets:
+  compile:
+    variables:
+      primary: '#69B7FF'
+      secondary: '#69C748'
+    #sourcemap: true
+output:
+  pagetypeformats:
+    homepage: html
+metatags:
+  data: true

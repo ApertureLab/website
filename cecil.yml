@@ -21,18 +21,12 @@ comingsoon:
     placeholder: Adresse e-mail…
     button: Prévenez-moi !
 
-pages:
-  default:
-    sitemap:
-      published: false
 assets:
   compile:
     variables:
       primary: '#69B7FF'
       secondary: '#69C748'
     #sourcemap: true
-output:
-  pagetypeformats:
-    homepage: html
+
 metatags:
   data: true

@@ -28,5 +28,15 @@ assets:
       secondary: '#69C748'
     #sourcemap: true
 
-metatags:
-  data: true
+pages:
+  default:
+    sitemap:
+      published: false
+    xsl/sitemap:
+      published: false
+    xsl/atom:
+      published: false
+
+output:
+  pagetypeformats:
+    homepage: [html]

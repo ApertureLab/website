@@ -7,17 +7,8 @@ author:
   website: https://arnaudligny.fr
 image: aperture-lab.png
 social:
-  #twitter:
-  #  site: ApertureLabFr
-  #  creator: ArnaudLigny
-  #facebook:
-  #  username: Narno
-  #instagram:
-  #  username: narn0
   github:
     username: ApertureLab
-  #linkedin:
-  #  username: arnaudligny
 language: fr
 languages:
   - code: fr

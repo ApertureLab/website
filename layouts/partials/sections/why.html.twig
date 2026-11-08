@@ -1,0 +1,14 @@
+{%- set s = page.why -%}
+<section id="pourquoi">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{ s.eyebrow }}</span>
+      <h2>{{ s.title }}</h2>
+    </div>
+    <ul class="why">
+      {%- for item in s.items %}
+      <li class="reveal"><b>{{ item.title }}</b><span>{{ item.text }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

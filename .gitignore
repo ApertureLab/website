@@ -1,5 +1,5 @@
 .cecil
 .cache
 _site
-vendor
-themes/*
+
+_drafts/

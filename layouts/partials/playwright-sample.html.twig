@@ -1,0 +1,6 @@
+<pre class="code" role="img" aria-label="Exemple de test Playwright"><code><span class="k">test</span>(<span class="s">'commande invité'</span>, <span class="k">async</span> ({ page }) =&gt; {
+  <span class="k">await</span> page.goto(<span class="s">'/panier'</span>);
+  <span class="k">await</span> page.getByRole(<span class="s">'button'</span>,
+    { name: <span class="s">'Commander'</span> }).click();
+  <span class="k">await</span> expect(page).toHaveURL(<span class="s">/confirmation/</span>);
+});</code></pre>

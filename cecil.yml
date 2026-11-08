@@ -1,37 +1,26 @@
 title: "Aperture Lab"
 baseurl: https://aperturelab.fr/
-description: "Aperture Lab, des solutions numériques pragmatiques."
-baseline: "Solutions numériques pragmatiques."
-author:
-  name: "Arnaud Ligny"
-  website: https://arnaudligny.fr
+baseline: "Conseil e-commerce et QA Playwright"
+description: "Aperture Lab accompagne PME et grands comptes : conseil e-commerce, architecture headless, automatisation des tests avec Playwright et sites web performants."
 image: aperture-lab.png
 social:
   github:
-    username: ApertureLab
+    url: https://github.com/ApertureLab
 language: fr
 languages:
   - code: fr
     name: Français
     locale: fr_FR
 
-theme: comingsoon
-comingsoon:
-  subscribe:
-    placeholder: Adresse e-mail…
-    button: Prévenez-moi !
-
-assets:
-  compile:
-    variables:
-      primary: '#69B7FF'
-      secondary: '#69C748'
-    #sourcemap: true
+metatags:
+  data:
+    publisher:
+      type: Organization
+      name: "Aperture Lab"
+      logo: aperture-lab.png
 
 pages:
   default:
-    sitemap:
-      published: false
     xsl/sitemap:
       published: false
     xsl/atom:

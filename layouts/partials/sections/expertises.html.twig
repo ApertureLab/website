@@ -1,29 +1,33 @@
-{%- set s = page.expertises -%}
-<section id="expertises">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">{{ s.eyebrow }}</span>
-      <h2>{{ s.title }}</h2>
-      <p class="lead">{{ s.lead }}</p>
-    </div>
-    <div class="grid grid-3">
-      {%- for item in s.items %}
-      <article class="card expertise{{ item.featured|default(false) ? ' featured' }} reveal">
-        {%- if item.badge is defined %}
-        <span class="badge">{{ item.badge }}</span>
-        {%- endif %}
-        {{ include('partials/icon.html.twig', {name: item.icon}) }}
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.text }}</p>
-        {%- if item.code|default(false) %}
-        {{ include('partials/playwright-sample.html.twig') }}
-        {%- endif %}
-        {%- if item.tags is defined %}
-        <ul class="tags">{% for tag in item.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
-        {%- endif %}
-        <p class="meta"><b>{{ item.meta.label }}</b> {{ item.meta.text }}</p>
-      </article>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+{%- set s = page.expertises ~%}
+      <section id="expertises">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">{{ s.eyebrow }}</span>
+            <h2>{{ s.title }}</h2>
+            <p class="lead">{{ s.lead }}</p>
+          </div>
+          <div class="grid grid-3">
+            {%- for item in s.items ~%}
+            <article class="card expertise{{ item.featured|default(false) ? ' featured' }} reveal">
+              {%- if item.badge is defined ~%}
+              <span class="badge">{{ item.badge }}</span>
+              {%- endif %}
+              {{- include('partials/icon.html.twig', {name: item.icon}) ~}}
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.text }}</p>
+              {%- if item.code|default(false) ~%}
+              {{- include('partials/playwright-sample.html.twig') ~}}
+              {%- endif ~%}
+              {%- if item.tags is defined ~%}
+              <ul class="tags">
+                {%- for tag in item.tags ~%}
+                <li>{{ tag }}</li>
+                {%- endfor ~%}
+              </ul>
+              {%- endif ~%}
+              <p class="meta"><b>{{ item.meta.label }}</b> {{ item.meta.text }}</p>
+            </article>
+            {%- endfor ~%}
+          </div>
+        </div>
+      </section>

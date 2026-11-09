@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  {{ include('partials/metatags.html.twig') }}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
-  {{ html(asset('css/styles.css')) }}
-  {%- block head %}{% endblock %}
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="{{ url(site.home) }}#top" aria-label="{{ site.title|e('html_attr') }}, retour en haut de page">
-        <img src="{{ asset('aperture-lab.svg') }}" alt="" width="22" height="40">
-        {{ site.title }}
-      </a>
-      {%- if site.page(site.home).nav is defined %}
-      <nav aria-label="Navigation principale">
-        <ul class="nav">
-          {%- for item in site.page(site.home).nav %}
-          <li><a href="{{ url(site.home) }}#{{ item.anchor }}">{{ item.label }}</a></li>
-          {%- endfor %}
-        </ul>
-      </nav>
-      {%- endif %}
-      <a class="btn btn-primary btn-small" href="{{ url(site.home) }}#contact">Nous contacter</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    {{- include('partials/metatags.html.twig') ~}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <style>
+      {{ asset('css/styles.css')|inline ~}}
+    </style>
+    {%- block head %}{% endblock ~%}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="{{ url(site.home) }}#top" aria-label="{{ site.title|e('html_attr') }}, retour en haut de page">
+          <img src="{{ asset('aperture-lab.svg') }}" alt="" width="22" height="40">
+          {{- site.title ~}}
+        </a>
+        {%- if site.page(site.home).nav is defined ~%}
+        <nav aria-label="Navigation principale">
+          <ul class="nav">
+            {%- for item in site.page(site.home).nav ~%}
+            <li><a href="{{ url(site.home) }}#{{ item.anchor }}">{{ item.label }}</a></li>
+            {%- endfor ~%}
+          </ul>
+        </nav>
+        {%- endif ~%}
+        <a class="btn btn-primary btn-small" href="{{ url(site.home) }}#contact">Nous contacter</a>
+      </div>
+    </header>
 
-  <main id="top">
-    {%- block content %}{% endblock %}
-  </main>
+    <main id="top">
+      {%- block content %}{% endblock ~%}
+    </main>
 
-  <footer>
-    <div class="wrap">
-      <span>© {{ 'now'|date('Y') }} {{ site.title }} · {{ site.baseline }}</span>
-      <span><a href="{{ site.social.github.url }}">GitHub</a></span>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="wrap">
+        <span>© {{ 'now'|date('Y') }} {{ site.title }} · {{ site.baseline }}</span>
+        <span><a href="{{ site.social.github.url }}">GitHub</a></span>
+      </div>
+    </footer>
+  </body>
 </html>

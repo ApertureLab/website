@@ -1,14 +1,14 @@
-{%- set s = page.method -%}
-<section id="methode">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">{{ s.eyebrow }}</span>
-      <h2>{{ s.title }}</h2>
-    </div>
-    <ol class="steps">
-      {%- for step in s.steps %}
-      <li class="reveal"><h3>{{ step.title }}</h3><p>{{ step.text }}</p></li>
-      {%- endfor %}
-    </ol>
-  </div>
-</section>
+{%- set s = page.method ~%}
+      <section id="methode">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">{{ s.eyebrow }}</span>
+            <h2>{{ s.title }}</h2>
+          </div>
+          <ol class="steps">
+            {%- for step in s.steps ~%}
+            <li class="reveal"><h3>{{ step.title }}</h3><p>{{ step.text }}</p></li>
+            {%- endfor ~%}
+          </ol>
+        </div>
+      </section>

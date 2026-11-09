@@ -1,25 +1,27 @@
-{%- set s = page.references -%}
-<section class="alt" id="references">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">{{ s.eyebrow }}</span>
-      <h2>{{ s.title }}</h2>
-    </div>
-    <ul class="logos reveal" aria-label="Références clients">
-      {%- for client in s.clients %}<li>{{ client }}</li>{% endfor %}
-    </ul>
-    <div class="grid grid-3">
-      {%- for case in s.cases %}
-      <article class="card case reveal">
-        <p class="sector">{{ case.sector }}</p>
-        <h3>{{ case.title }}</h3>
-        <dl>
-          <dt>Contexte</dt><dd>{{ case.context }}</dd>
-          <dt>Intervention</dt><dd>{{ case.intervention }}</dd>
-          <dt>Résultat</dt><dd>{{ case.result }}</dd>
-        </dl>
-      </article>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+{%- set s = page.references ~%}
+      <section class="alt" id="references">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">{{ s.eyebrow }}</span>
+            <h2>{{ s.title }}</h2>
+          </div>
+          <ul class="logos reveal" aria-label="Références clients">
+            {%- for client in s.clients ~%}
+            <li>{{ client }}</li>
+            {%- endfor ~%}
+          </ul>
+          <div class="grid grid-3">
+            {%- for case in s.cases ~%}
+            <article class="card case reveal">
+              <p class="sector">{{ case.sector }}</p>
+              <h3>{{ case.title }}</h3>
+              <dl>
+                <dt>Contexte</dt><dd>{{ case.context }}</dd>
+                <dt>Intervention</dt><dd>{{ case.intervention }}</dd>
+                <dt>Résultat</dt><dd>{{ case.result }}</dd>
+              </dl>
+            </article>
+            {%- endfor ~%}
+          </div>
+        </div>
+      </section>

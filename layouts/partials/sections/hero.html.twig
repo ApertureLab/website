@@ -1,24 +1,24 @@
-{%- set s = page.hero -%}
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <span class="eyebrow">{{ s.eyebrow }}</span>
-      <h1>{{ s.title }}</h1>
-      <p class="lead">{{ s.lead }}</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#{{ s.cta_primary.anchor }}">{{ s.cta_primary.label }}</a>
-        <a class="btn btn-ghost" href="#{{ s.cta_secondary.anchor }}">{{ s.cta_secondary.label }}</a>
-      </div>
-    </div>
-    <div class="hero-visual" aria-hidden="true">
-      {{ include('partials/iris.svg.twig') }}
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="stats">
-      {%- for stat in s.stats %}
-      <div><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></div>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+{%- set s = page.hero ~%}
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <span class="eyebrow">{{ s.eyebrow }}</span>
+            <h1>{{ s.title }}</h1>
+            <p class="lead">{{ s.lead }}</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#{{ s.cta_primary.anchor }}">{{ s.cta_primary.label }}</a>
+              <a class="btn btn-ghost" href="#{{ s.cta_secondary.anchor }}">{{ s.cta_secondary.label }}</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            {{ include('partials/iris.svg.twig') }}
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="stats">
+            {%- for stat in s.stats ~%}
+            <div><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></div>
+            {%- endfor ~%}
+          </div>
+        </div>
+      </section>

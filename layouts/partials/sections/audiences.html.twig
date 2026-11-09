@@ -1,18 +1,18 @@
-{%- set s = page.audiences -%}
-<section class="alt" id="pour-qui">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">{{ s.eyebrow }}</span>
-      <h2>{{ s.title }}</h2>
-    </div>
-    <div class="grid grid-2">
-      {%- for item in s.items %}
-      <article class="card audience reveal">
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.text }}</p>
-        <p class="formats">{{ item.formats }}</p>
-      </article>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+{%- set s = page.audiences ~%}
+      <section class="alt" id="pour-qui">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">{{ s.eyebrow }}</span>
+            <h2>{{ s.title }}</h2>
+          </div>
+          <div class="grid grid-2">
+            {%- for item in s.items ~%}
+            <article class="card audience reveal">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.text }}</p>
+              <p class="formats">{{ item.formats }}</p>
+            </article>
+            {%- endfor ~%}
+          </div>
+        </div>
+      </section>

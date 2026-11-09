@@ -47,13 +47,13 @@ expertises:
       tags: [Adobe Commerce, commercetools, VTEX, Mirakl, ERP · PIM · OMS]
       meta: { label: "Formats :", text: "audit, cadrage, AMOA, assistance à la recette." }
     - icon: shield
-      featured: true
-      badge: Notre spécialité
       title: QA et automatisation des tests
       text: Stratégie de tests, automatisation des parcours critiques avec <strong>Playwright</strong>, tests d'API, visuels et d'accessibilité, intégration à votre CI/CD.
       code: true
       meta: { label: "Livrable :", text: "un référentiel de tests maintenable, intégré à votre pipeline et transmis à vos équipes." }
     - icon: bolt
+      featured: true
+      badge: Notre spécialité
       title: Sites web performants et durables
       text: Sites vitrines et éditoriaux rapides, sobres, sécurisés et accessibles, basés sur des architectures statiques et découplées, guidés par les bonnes pratiques qualité Opquast.
       tags: [Jamstack, CMS headless, Accessibilité, Éco-conception]

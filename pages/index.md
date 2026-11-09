@@ -6,6 +6,7 @@ nav:
   - { label: Expertises, anchor: expertises }
   - { label: Méthode, anchor: methode }
   - { label: Références, anchor: references }
+  - { label: Équipe, anchor: equipe }
   - { label: FAQ, anchor: faq }
 
 hero:
@@ -109,6 +110,27 @@ why:
     - { title: Indépendants des éditeurs, text: "Nos recommandations ne dépendent d'aucun partenariat commercial." }
     - { title: Une équipe modulable, text: "Un noyau d'experts et un réseau de spécialistes complémentaires, mobilisés selon vos besoins." }
     - { title: Ouverts par nature, text: "Nous concevons et maintenons des outils open source, dont le générateur de sites statiques <a href=\"https://cecil.app\">Cecil</a>." }
+
+team:
+  eyebrow: L'équipe
+  title: Des expertises complémentaires, un seul interlocuteur.
+  lead: Un noyau resserré qui couvre le conseil, la technique, la qualité et le design, renforcé selon vos besoins.
+  members:
+    - name: Arnaud Ligny
+      role: Fondateur · Conseil e-commerce et QA
+      photo: team/arnaud-ligny.jpg
+      text: "Plus de 15 ans de projets e-commerce, du cadrage à la mise en production. Spécialiste de l'automatisation des tests avec Playwright, certifié Opquast et créateur du générateur de sites statiques <a href=\"https://cecil.app\">Cecil</a>."
+      tags: [Architecture e-commerce, Playwright, Opquast, Jamstack]
+      link: { label: arnaudligny.fr, url: "https://arnaudligny.fr" }
+    - name: Cécile Ricordeau
+      role: UI Designeuse · Directrice artistique
+      photo: team/cecile-ricordeau.jpg
+      text: "Plus de 15 ans en agence et chez l'annonceur, dont plusieurs postes de directrice de création (Ultranoir, Uzful, Baobaz). Conçoit des interfaces qui cherchent le juste équilibre entre la forme et la fonction."
+      tags: [UI design, E-commerce, Direction artistique, Illustration]
+      link: { label: cecillie.fr, url: "https://www.cecillie.fr" }
+  network:
+    title: Notre réseau
+    text: "Développeurs, experts accessibilité, rédacteurs… des spécialistes de confiance, mobilisés selon la nature de votre projet."
 
 faq:
   eyebrow: FAQ

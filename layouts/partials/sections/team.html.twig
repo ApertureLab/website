@@ -1,0 +1,43 @@
+{%- set s = page.team -%}
+<section class="alt" id="equipe">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{ s.eyebrow }}</span>
+      <h2>{{ s.title }}</h2>
+      {%- if s.lead is defined %}
+      <p class="lead">{{ s.lead }}</p>
+      {%- endif %}
+    </div>
+    <div class="grid grid-3">
+      {%- for member in s.members %}
+      <article class="card member reveal">
+        <div class="avatar" aria-hidden="true">
+          {%- if member.photo is defined %}
+          <img src="{{ asset(member.photo)|resize(192) }}" alt="" width="96" height="96" loading="lazy">
+          {%- else %}
+          <span>{{ member.name|split(' ')|map(w => w|first)|join }}</span>
+          {%- endif %}
+        </div>
+        <h3>{{ member.name }}</h3>
+        <p class="role">{{ member.role }}</p>
+        <p>{{ member.text|raw }}</p>
+        {%- if member.tags is defined %}
+        <ul class="tags">
+          {%- for tag in member.tags %}<li>{{ tag }}</li>{% endfor %}
+        </ul>
+        {%- endif %}
+        {%- if member.link is defined %}
+        <a class="member-link" href="{{ member.link.url }}">{{ member.link.label }}</a>
+        {%- endif %}
+      </article>
+      {%- endfor %}
+      {%- if s.network is defined %}
+      <article class="card member network reveal">
+        <div class="avatar" aria-hidden="true"><span>+</span></div>
+        <h3>{{ s.network.title }}</h3>
+        <p>{{ s.network.text }}</p>
+      </article>
+      {%- endif %}
+    </div>
+  </div>
+</section>

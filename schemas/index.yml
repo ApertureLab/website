@@ -1,0 +1,216 @@
+# Schéma de la page d'accueil (one-page) : une clé par section, rendue par `layouts/partials/sections/*.html.twig`.
+# Les textes peuvent contenir du HTML en ligne (<em>, <strong>, <a>).
+# Les ancres YAML (&nom / *nom) évitent de répéter les définitions communes.
+
+nav:
+  type: list
+  label: Navigation principale
+  items:
+    type: map
+    fields:
+      label: &label {type: string, required: true, label: Libellé}
+      anchor: &anchor {type: string, required: true, pattern: '^[a-z0-9-]+$', label: Ancre, description: "Identifiant de la section ciblée, sans « # »"}
+
+hero:
+  type: map
+  required: true
+  label: Introduction
+  fields:
+    eyebrow: &eyebrow {type: string, required: true, label: Surtitre}
+    title: &title {type: string, required: true, label: Titre}
+    lead: &lead {type: string, required: true, label: Chapô}
+    cta_primary: &cta {type: map, required: true, label: Bouton, fields: {label: *label, anchor: *anchor}}
+    cta_secondary: *cta
+    stats:
+      type: list
+      max: 4
+      label: Chiffres clés
+      items:
+        type: map
+        fields:
+          value: {type: string, required: true, label: Valeur}
+          label: *label
+
+problems:
+  type: map
+  required: true
+  label: Vos enjeux
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    items:
+      type: list
+      required: true
+      min: 1
+      items:
+        type: map
+        fields:
+          icon: &icon {type: string, required: true, enum: [trend, alert, question, clock, cart, shield, bolt], label: Icône}
+          title: *title
+          text: &text {type: string, required: true, label: Texte}
+
+expertises:
+  type: map
+  required: true
+  label: Expertises
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    lead: *lead
+    items:
+      type: list
+      required: true
+      min: 1
+      items:
+        type: map
+        fields:
+          icon: *icon
+          title: *title
+          text: *text
+          featured: {type: bool, default: false, label: Mise en avant}
+          badge: {type: string, label: Badge}
+          code: {type: bool, default: false, label: "Afficher l'exemple Playwright"}
+          tags: &tags {type: list, items: string, label: Étiquettes}
+          meta:
+            type: map
+            required: true
+            label: Mention
+            fields:
+              label: *label
+              text: *text
+
+audiences:
+  type: map
+  required: true
+  label: Pour qui ?
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    items:
+      type: list
+      required: true
+      min: 1
+      items:
+        type: map
+        fields:
+          title: *title
+          text: *text
+          formats: {type: string, required: true, label: Formats}
+
+method:
+  type: map
+  required: true
+  label: Méthode
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    steps:
+      type: list
+      required: true
+      min: 1
+      label: Étapes
+      items:
+        type: map
+        fields:
+          title: *title
+          text: *text
+
+references:
+  type: map
+  required: true
+  label: Références
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    clients: {type: list, required: true, items: string, label: Clients}
+    cases:
+      type: list
+      required: true
+      label: Études de cas
+      items:
+        type: map
+        fields:
+          sector: {type: string, required: true, label: Secteur}
+          title: *title
+          context: {type: string, required: true, label: Contexte}
+          intervention: {type: string, required: true, label: Intervention}
+          result: {type: string, required: true, label: Résultat}
+
+why:
+  type: map
+  required: true
+  label: Pourquoi Aperture Lab ?
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    items:
+      type: list
+      required: true
+      min: 1
+      items:
+        type: map
+        fields:
+          title: *title
+          text: *text
+
+team:
+  type: map
+  required: true
+  label: Équipe
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    lead: {type: string, label: Chapô}
+    members:
+      type: list
+      required: true
+      min: 1
+      label: Membres
+      items:
+        type: map
+        fields:
+          name: {type: string, required: true, label: Nom}
+          role: {type: string, required: true, label: Rôle}
+          photo: {type: string, format: path, pattern: '^[\w/-]+\.(png|jpe?g|webp|avif)$', label: Photo, description: "Chemin relatif à assets/"}
+          text: *text
+          tags: *tags
+          link:
+            type: map
+            label: Lien
+            fields:
+              label: *label
+              url: {type: string, required: true, format: url, label: URL}
+    network:
+      type: map
+      label: Réseau
+      fields:
+        title: *title
+        text: *text
+
+faq:
+  type: map
+  required: true
+  label: FAQ
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    items:
+      type: list
+      required: true
+      min: 1
+      items:
+        type: map
+        fields:
+          question: {type: string, required: true, label: Question}
+          answer: {type: string, required: true, label: Réponse}
+
+contact:
+  type: map
+  required: true
+  label: Contact
+  fields:
+    eyebrow: *eyebrow
+    title: *title
+    lead: *lead
+    needs: {type: list, required: true, min: 1, items: string, label: Besoins proposés}
+    submit: {type: string, required: true, label: Libellé du bouton}

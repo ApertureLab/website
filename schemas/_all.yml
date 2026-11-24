@@ -1,0 +1,3 @@
+# Schéma commun à toutes les pages (clé `*`).
+title: {type: string, required: true, label: Titre}
+description: {type: string, max: 160, label: Description, description: Méta description (160 caractères max.)}
